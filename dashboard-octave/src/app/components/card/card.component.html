@@ -1,0 +1,34 @@
+<div class="bg-white shadow-md rounded-lg overflow-hidden border border-gray-200">
+  <div class="text-white px-4 py-2" style="background-color: #9F2B68;">
+    <h4 class="text-lg font-semibold">Environment {{ index() }}</h4>
+  </div>
+  <div class="p-4">
+    <p class="text-gray-700 mb-2">
+      <strong>CO₂ Equivalent Accuracy:</strong> {{ environment().co2EquivalentAccuracy }}
+    </p>
+    <p class="text-gray-700 mb-2">
+      <strong>IAQ Accuracy:</strong> {{ environment().iaqAccuracy }}
+    </p>
+    <p class="text-gray-700 mb-2">
+      <strong>Breath VOC Value:</strong> {{ environment().breathVocValue }}
+    </p>
+    <p class="text-gray-700 mb-2">
+      <strong>CO₂ Equivalent Value:</strong> {{ environment().co2EquivalentValue }}
+    </p>
+    <p class="text-gray-700 mb-2">
+      <strong>Temperature:</strong> {{ environment().temperature }}°C
+    </p>
+    <p class="text-gray-700 mb-2">
+      <strong>Humidity:</strong> {{ environment().humidity }}%
+    </p>
+    <p class="text-gray-700 mb-2">
+      <strong>Pressure:</strong> {{ environment().pressure }} Pa
+    </p>
+    <p class="text-gray-700 mb-2">
+      <strong>IAQ Value:</strong> {{ environment().iaqValue }}
+    </p>
+    <p class="text-gray-700">
+      <strong>Breath VOC Accuracy:</strong> {{ environment().breathVocAccuracy }}
+    </p>
+  </div>
+</div>
